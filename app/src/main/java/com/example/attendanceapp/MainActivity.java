@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     editor.apply();
 
                     // Show user toast for successful save
-                    Toast.makeText(MainActivity.this, "Added "+ name + " to records successfully!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Added " + name + " to records successfully!", Toast.LENGTH_LONG).show();
                 }
             }
         });

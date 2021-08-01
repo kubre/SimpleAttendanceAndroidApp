@@ -29,9 +29,10 @@ public class AttendanceActivity extends AppCompatActivity {
     private SharedPreferences mAttendanceDb;
 
     private ListView mStudentsList;
-    private StudentAdapter mAdapter;
     private Button btnSave;
     private Button btnDatePicker;
+
+    private StudentAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +109,8 @@ public class AttendanceActivity extends AppCompatActivity {
             Toast.makeText(AttendanceActivity.this,
                     "Students: " + students + " were present on " + date,
                     Toast.LENGTH_SHORT).show();
+
+            // Send user back to main screen
             Intent i = new Intent(AttendanceActivity.this, MainActivity.class);
             startActivity(i);
         }
